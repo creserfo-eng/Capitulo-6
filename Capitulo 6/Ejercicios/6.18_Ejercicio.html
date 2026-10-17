@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Ejercicio 6.18</title>
+      <script>
+         var n1 = parseInt(window.prompt("Escriba el primer entero:"));
+         var n2 = parseInt(window.prompt("Escriba el segundo entero:"));
+         var n3 = parseInt(window.prompt("Escriba el tercer entero:"));
+
+         var suma = n1 + n2 + n3;
+         var promedio = suma / 3;
+         var producto = n1 * n2 * n3;
+         
+         var menor = n1;
+         if (n2 < menor) menor = n2;
+         if (n3 < menor) menor = n3;
+
+         var mayor = n1;
+         if (n2 > mayor) mayor = n2;
+         if (n3 > mayor) mayor = n3;
+
+         window.alert("Suma: " + suma + "\nPromedio: " + promedio + "\nProducto: " + producto + "\nMenor: " + menor + "\nMayor: " + mayor);
+      </script>
+   </head>
+   <body></body>
+</html>
